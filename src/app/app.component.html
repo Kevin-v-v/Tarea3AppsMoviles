@@ -13,6 +13,7 @@
           </div>
       </div>
 <div *ngIf="!processing">
+    <h4>Cantidad de personajes encontrados: {{generalData.info.count}}</h4>
     <div *ngFor="let p of generalData.results; index as i"  id="results">
       <h5>
         <img class="rounded float-left" height="120" src="{{generalData.results[i].image}}">
